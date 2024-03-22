@@ -8,7 +8,7 @@
         {
             "name": "getExampleData",
             "summary": "Retrieves example data from the API.",
-            "x-notification": "fff",
+            "x-notification": false,
             "params": [
                 {
                     "name": "dataId",

@@ -2,7 +2,7 @@ import metaSchema, { OpenrpcDocument as OpenRPC } from "@open-rpc/meta-schema";
 import jsonSchema from "@json-schema-tools/meta-schema"
 import extensionSchema from "./open-rpc-extensions-schema.json"
 
-const getMetaSchemaExtended = () => {
+const getMetaSchemaWithExtensionSchema = ():any => {
     const extensionMetaSchemaCopy = { ...extensionSchema } as any;
     const metaSchemaCopy = { ...metaSchema } as any;
     delete extensionMetaSchemaCopy.$schema;
@@ -16,4 +16,4 @@ const getMetaSchemaExtended = () => {
     return metaSchemaCopy;  
 };
 
-export default getMetaSchemaExtended;
+export default getMetaSchemaWithExtensionSchema;
